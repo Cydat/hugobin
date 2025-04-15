@@ -10,6 +10,8 @@ on:
 
 permissions:
   contents: write # Ensure GITHUB_TOKEN has write permissions for pushing changes
+  pages: read
+  id-token: write
 
 jobs:
   Update-FixIt:
