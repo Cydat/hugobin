@@ -1,6 +1,8 @@
+# 将Hugo静态内容部署到 GitHub Pages 的简易工作流程
 name: Hugo build and deploy
 on:
   push:
+  # 仅在推送到默认分支时运行。
     branches: [ main ]
     paths:
       - 'assets/**'
@@ -13,9 +15,10 @@ on:
     workflows: ['Update theme']
     types:
       - completed
+  # 这个选项可以使你手动在 Action tab 页面触发工作流
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+#  设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
 permissions:
   contents: read
   pages: write
