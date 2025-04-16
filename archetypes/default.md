@@ -1,3 +1,4 @@
+
 ---
 title: { { replace .TranslationBaseName "-" " " | title } }
 subtitle:
