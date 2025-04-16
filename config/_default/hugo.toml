@@ -3,20 +3,20 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "xdx blog"
 baseURL = "https://example.org/"
-theme = [
-  "FixIt",
-  "shortcode-docs-bookmark"
-]
+buildDrafts = false
 defaultContentLanguage = "en"
-languageCode = "en"
-hasCJKLanguage = true
-enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+languageCode = "en"
 relativeURLs = false
-buildDrafts = false
 summaryLength = 150
+theme = [
+  "FixIt",
+  "shortcode-docs-bookmark",
+]
+title = "xdx blog"
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
