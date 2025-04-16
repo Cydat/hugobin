@@ -1,8 +1,10 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-subtitle: ""
+title: {{ replace .TranslationBaseName "-" " " | title }}
+subtitle:
 date: {{ .Date }}
-description: ""
-keywords: ""
+slug: {{ substr .File.UniqueID 0 7 }}
+description:
+keywords:
+draft: true
 comment: false
 ---
